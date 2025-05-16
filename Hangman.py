@@ -3,7 +3,7 @@ list1 = ["apple","orange","grapes","papaya","banana"]
 active_list = random.choice(list1)
 hidden_list = ["_"] * len(active_list)
 guessed_letter = set()
-attempt = 6
+attempt = 10
 while attempt > 0 and "_" in hidden_list:
     print(" ".join(hidden_list))
     print(f"Guessed letter:{','.join(sorted(guessed_letter))}")
